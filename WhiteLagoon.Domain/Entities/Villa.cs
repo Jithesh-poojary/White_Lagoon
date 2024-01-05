@@ -28,7 +28,7 @@ namespace WhiteLagoon.Domain.Entities
         public DateTime? Updated_Date { get; set; }
 
 
-      
+     
     }
 }
 
