@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WhiteLagoon.Domain.Entities;
 
 namespace WhiteLagoon.web.Models.ViewModels
@@ -6,7 +7,7 @@ namespace WhiteLagoon.web.Models.ViewModels
 	public class VillaNumberVM
 	{
 		public VillaNumber? VillaNumber { get; set; }
-		[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidateNever]
+		[ValidateNever]
 		public IEnumerable<SelectListItem>? VillaList {  get; set; }
 	}
 }
